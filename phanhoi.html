@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback</title>
+	<script
+      src="https://kit.fontawesome.com/1dc1877525.js"
+      crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="phanhoi.css">
+</head>
+<body>
+	<header>
+		<div class="container-1">
+			<div class="card-header">
+				<div class="card-header-logo">
+					<img src="image/logo.gif" alt="">
+					<p>Contoso Coffee</p>
+				</div>
+				<nav>
+					<ul>
+						<label for="nav-mobile-input"><i class="fa-solid fa-bars"></i></label>
+						
+						<input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+						
+						<label for="nav-mobile-input"
+							 class="nav__overlay">
+						</label>
+						
+						<div class="nav-pc">
+							<li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+							<li><a href="http://127.0.0.1:5500/introduce.html">Introduce</a></li>
+							<li><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+							<li><a href="http://127.0.0.1:5500/phanhoi.html">Feedback</a></li>
+							<li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+						</div>
+						<div class="nav-mobile">
+							<label for="nav-mobile-input"
+								 class="nav-mobile-closed"><i class="fa-solid fa-xmark"></i>
+							</label>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/home.html">Home</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/introduce.html">Introduce</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/phanhoi.html">Feedback</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/login.html">Login</a></li>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="card-form">
+			<div class="card-form-1">
+				<p style="font-size: xx-large;text-align: center;"><b>Feedback Form</b></p>
+				<p style="font-size: larger; position: relative;bottom: 20px;opacity: 50%;">We would love to hear your thoughts,
+					 suggestions, concerns or problems
+					  with anything so we can improve</p>
+					  <hr>
+					  <div class="card-feedback">
+						<label style="opacity: 50%; font-size: 20px;display: inline-block;margin-top: 50px;" for="">Describe Your Feedback:*</label>
+						<textarea style="height: 200px;" name="" id=""></textarea>
+					  </div>
+					  <div class="card-input">
+						<label style="margin-top: 40px;display: inline-block;" for="">Name*</label>
+						<div class="card-input-2">
+							<div class="card-input-1">
+								<input type="text">
+								<p style="opacity: 50%;">First Name</p>
+							</div>
+							<div class="card-input-1">
+								<input type="text">
+								<p style="opacity: 50%;">Last Name</p>
+							</div>
+						</div>
+					  </div>
+					  <div class="card-email">
+						<label style="display: inline-block; margin-top: 10px;" for="">E-mail*</label>
+						<input style="display: inline-block;margin-top: 10px; opacity: 70%;font-size: 15px;padding-left: 10px;" type="email" placeholder="ex: myname@example.com">
+						<p style="opacity: 50%;margin-top: 10px;">example@example.com</p>
+					  </div>
+					  <hr>
+					  <div class="card-submit"><input type="submit" value="Submit"></div>
+		</div>
+	</section>
+
+	<hr style="color: black; margin-top: 50px;">
+	<footer>
+		<p style="display: flex; justify-content: end;opacity: 20%;">Powered by Microsoft Advertising</p>
+	</footer>
+</body>
+</html>

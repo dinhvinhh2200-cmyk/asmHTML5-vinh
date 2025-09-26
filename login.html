@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<script
+      src="https://kit.fontawesome.com/1dc1877525.js"
+      crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<header>
+		<div class="container-1">
+			<div class="card-header">
+				<div class="card-header-logo">
+					<img src="image/logo.gif" alt="">
+					<p>Contoso Coffee</p>
+				</div>
+				<nav>
+					<ul>
+						<label for="nav-mobile-input"><i class="fa-solid fa-bars"></i></label>
+						
+						<input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+						
+						<label for="nav-mobile-input"
+							 class="nav__overlay">
+						</label>
+						
+						<div class="nav-pc">
+							<li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+							<li><a href="http://127.0.0.1:5500/introduce.html">Introduce</a></li>
+							<li><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+							<li><a href="http://127.0.0.1:5500/phanhoi.html">Feedback</a></li>
+							<li><a href="http://127.0.0.1:5500/login.html">Login</a></li>
+						</div>
+						<div class="nav-mobile">
+							<label for="nav-mobile-input"
+								 class="nav-mobile-closed"><i class="fa-solid fa-xmark"></i>
+							</label>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/home.html">Home</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/introduce.html">Introduce</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/phanhoi.html">Feedback</a></li>
+							<li><a class="nav-mobile-link" href="http://127.0.0.1:5500/login.html">Login</a></li>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="title-login">
+				<p><b style="font-size: 25px;">Đăng ký</b></p>
+				<p style="font-style: italic;">Hãy trở thành thành viên để không bỏ lỡ các ưu đãi, giảm giá và voucher dành riêng cho bạn.</p>
+			</div>
+			<div class="login">
+				<form id="myform" action="">
+					<input class="card" type="text" placeholder="Name:" id="username" name="username" required minlength="5">
+					<input class="card" type="email" placeholder="Email:" id="email" name="email" required>		
+					<input class="card" type="tel" placeholder="Tel:" id="phone" name="phone" pattern="[0-9]{10}" required>		
+					<input class="card" type="password" placeholder="Passwork:" id="password" name="password" required minlength="8">			
+					<input class="submit"  type="submit" placeholder="Submit" id="submit" value="Submit" >		
+				</form>
+			</div>
+			<div class="card-video">
+				<p>An Example Video</p>
+				<iframe 
+				src="https://www.youtube.com/embed/TT9wIWPlOYs?si=uRSTA0bFd1Ju6zbH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+	
+		<hr style="color: black; margin-top: 50px;">
+	<footer>
+		<p style="display: flex; justify-content: end;opacity: 20%;">Powered by Microsoft Advertising</p>
+	</footer>
+	<script>
+        function validateForm() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            // value.trim dùng để loại bỏ khoảng trắng ở đầu và cuối
+            if (username.length < 5) {
+                alert("Tên đăng nhập phải có ít nhất 5 ký tự.");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Mật khẩu phải có ít nhất 8 ký tự.");
+                return false;
+            }
+            if (!phone.match(/^\d{10}$/)) {
+                alert("Số điện thoại không hợp lệ.");
+                return false;
+            }
+
+            if (!email.match(/^\S+@\S+\.\S+$/)) {
+                alert("Email không hợp lệ.");
+                return false;
+            }
+
+            return true;
+        }
+
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            if (!validateForm()) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

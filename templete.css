@@ -1,0 +1,70 @@
+.card-music{
+	width: 90%;
+	margin:  0 auto;
+}
+.card-music--1{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.card-music-left{
+	width: 10%;
+}
+.card-music-right{
+	width: 80%;
+}
+.card-home-music{
+	display: flex;
+	gap: 0 10px;
+}
+.card-right-tab{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.card-right-tab-1{
+	display: flex;
+	width: 10%;
+}
+.card-button{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius:5px ;
+}
+.card-button-1{
+	border-top-right-radius:5px ;
+	border-bottom-right-radius:5px ;
+}
+.card-right-tab-1 button{
+	border: none;
+	/* border-radius: 5px; */
+	padding: 7px;
+}
+.card-right-tab-2{
+	width: 10%;
+}
+.card-right-tab-2 button{
+	padding: 7px;
+	border: none;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+.card-right-img{
+	display: flex;
+	gap: 0 30px;
+}
+.card-img{
+	position: relative;
+}
+.card-img__1{
+	display: flex;
+	gap: 0 30px;
+	position: relative;
+	bottom: 70px;
+	z-index: -1;
+}
+.card-text{
+	position: relative;
+	bottom: 80px;
+}

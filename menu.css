@@ -1,0 +1,152 @@
+/* css cho phần header */
+.container-1{
+	width: 95%;
+	margin: 0 auto;
+}
+.card-header{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.card-header-logo{
+	/* width: 20%; */
+	display: flex;
+}
+.card-header-logo img{
+	height: 40px;
+}
+.card-header-logo p{
+	margin-left: 10px;
+}
+.nav-pc{
+	display: flex;
+	flex-wrap: wrap;
+}
+li{
+	list-style: none;
+}
+li a{
+	color: black;
+	margin-left: 40px;
+	text-decoration: none;
+}
+.fa-bars{
+	display: none;
+}
+.nav__overlay{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+	animation: fadeIn linear 0.3s;
+}
+.nav-mobile{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom: 0;
+	width: 320px;
+	max-width: 100%;
+	background-color: #fff;
+	transform: translateX(100%);
+	opacity: 0;
+	transition: all linear 0.2s;
+}
+.nav-mobile-link{
+	display: block;
+	padding-top:20px;
+	padding-left: 35%;
+}
+.nav-mobile-closed{
+	width: 28px;
+	height: 28px;
+	color: #666;
+	position:absolute ;
+	top: 1rem;
+	left: 1rem;
+}
+.nav-input:checked ~ .nav__overlay{
+	display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+	transform: translateX(0);
+	opacity: 1;
+}
+/* css cho phần body */
+.container-2{
+	width:60% ;
+	margin: 0 auto;
+}
+.card-menu{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.card-menu-left{
+	width: 45%;
+}
+.card-menu-right{
+	width: 45%;
+	margin-top: 50px;
+}
+.card-size{
+	width: 85%;
+	display: flex;
+	margin-left: 30px;
+}
+.card-cafe{
+	width: 85%;
+	display: flex;
+	margin-left: 30px;
+}
+.title{
+	padding-left: 50px;
+}
+hr{
+	margin-left: 30px;
+	margin-right: 100px;
+}
+.card-menu-left{
+	margin-top: 100px;
+	background-color: #F8F8F8;
+	border-radius: 20px;
+}
+.card-menu-left img{
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	margin-left: 60px;
+}
+.card-menu-right img{
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+}
+
+
+/* reponsive cho web */
+@media only screen and (max-width: 1023px){
+	.fa-bars{
+		display: block;
+	}
+	.nav-pc{
+		display: none;
+	}
+	.card-menu-right{
+		position: relative;
+		z-index: -1;
+	}
+	footer{
+		position: relative;
+		z-index: -1;
+	}
+	.card-menu{
+		display: flex;
+		flex-direction: column;
+	}
+}
